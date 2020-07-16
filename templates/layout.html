@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+	.z{
+		background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("{{url_for('static',filename='IMG_UPLOAD/feedback.jpg')}}") 
+	}
+	.t{
+		color:#ffff;
+	}
+	.navbar-custom{
+		color: #ffff;
+	}
+	ul li a{
+		color: #ffff;
+	}
+	ul li a:hover{
+		background-color: #ffff;
+		color: orange;
+		border-radius: 20px;
+		transform: scale(1.1);
+		transition: ease-in-out 0.3s 
+	}
+	.navbar-brand{
+		color:#ffff;
+	}
+	.navbar-brand:hover{
+		color:#ffff;
+	}
+	.every-button{
+		color:#ffff;
+		background-color: orange;
+		border-radius: 20px;
+		text-decoration: none;
+	}
+	.n a:hover{
+		background-color: #ffff;
+		color: orange;
+		text-decoration: none
+		transform: scale(1.1);
+		border-radius: 20px;
+	}
+</style>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/bootstrap.css')}}">
+</head>
+
+<body class="z"  onload="move1(),move2(),move3()">
+<nav class="navbar bg-transparent navbar-custom" >
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#"><strong>Amazon Product Review</strong></a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#"><strong> Home </strong></a></li>
+      <li><a href="#"> <strong> About </strong> </a></li>
+      <li><a href="#"><strong>Contact Us</strong></a></li>
+      <li><a href="/feedback_senti"><strong>Feedback Sentiment</strong></a></li>
+    </ul>
+
+
+  </div>
+</nav>
+{% block body %}{% endblock %}
+

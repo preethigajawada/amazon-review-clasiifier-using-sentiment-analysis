@@ -1,0 +1,39 @@
+{%extends 'layout.html'%}
+
+{%block body%}
+<div class="col-lg-6 col-lg-offset-3">
+	<form class="form-group well" method="POST" action="/thor">
+<h1 class="text-warning" style="color:orange" ><center><b>FEEDBACK</b><center></h1><br>
+
+<label for="nm">Name :</label>
+<input type="text" class="form-control" name="short_desc"><br>
+
+<label for="sel1">Select your category :</label>
+  <select class="form-control" name="cat">
+    <option value="Electronics">Electronics</option>
+    <option value="Fashion and lifestyle">Fashion and lifestyle</option>
+    <option value="Beauty and Health">Beauty and Health</option>
+    <option value="Sports, Fitness, Bags, Luggage">Sports, Fitness, Bags, Luggage</option>
+  	<option value="Books and Audible">Books and Audible</option>
+  	<option value="Amazon Prime Music">Amazon Prime Music</option>
+  	<option value="Amazon Prime Video">Amazon Prime Video</option>
+  	<option value="Mobiles and Computers">Mobiles and Computers</option>
+  	<option value="Recharge and Bill Payment">Recharge and Bill Payment</option>
+  </select>
+<br>
+<label for="sel1">Share your Experience :)...</label>
+<textarea class="form-control" rows=7 name="review"></textarea>
+<br>
+&nbsp&nbsp<input type="submit" class="btn btn-warning btn-lg" value="Submit Feedback"> 
+&nbsp
+</form>
+
+
+</div>
+
+
+
+
+
+
+{%endblock%}

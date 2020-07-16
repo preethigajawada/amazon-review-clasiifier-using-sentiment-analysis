@@ -1,0 +1,23 @@
+{% extends 'layout.html' %}
+{%block body %}
+
+<div class="col-lg-6 col-lg-offset-3">
+	
+<form class="form-group well" action="/abc" method="POST" >
+<h1 class="text-warning" style="color:orange" ><center><b>SIGNUP</b><center></h1><br>
+<input type="text" class="form-control" name="name" placeholder="Username"><br>
+<input type="email" class="form-control" name="email" placeholder="Email"><br>
+<input type="text" class="form-control" name="phone" placeholder="Phone"><br>
+<input type="password" class="form-control" name="password" placeholder="Enter Password"><br>
+<input type="password" class="form-control" placeholder="Confirm Password"><br>
+
+<input type="submit" class="btn btn-warning btn-lg" value="Signup"> 
+&nbsp
+<a href="/login" style="text-decoration: none">Already have an account..? Sign In</a>
+</form>
+</div>
+
+
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,30 @@
+{% extends 'layout.html' %}
+{%block body%}	
+	<br><br><br><br><br><br><br><br>
+
+<div class="col-lg-6 col-lg-offset-3">
+<h1 class="t"><b><center>All that Matters, is your Opinion :)<center></b></h1>
+{%if 'name' in session%}
+<h4 class="t"><b><center>{{his_name}}<center></b></h5>
+<br><br>
+<div class="col-lg-2 col-lg-offset-4 n">
+	<a href="/write_feedback" class="btn btn-lg every-button"><b>Write a FeedBack</b></a>
+</div>
+{%endif%}
+{%if 'name' not in session %}
+</div><br><br>
+<br><br>
+<div class="col-lg-2 col-lg-offset-3 n">
+	<a href="/login" class="btn every-button"><b>Login</b></a>
+</div>
+
+<div class="col-lg-2 col-lg-offset-2 n">
+	<a href="/signup" class="btn every-button"><b>Sign Up</b></a>
+</div>
+{%endif%}
+
+
+
+</body>
+{% endblock %}
+</html>
